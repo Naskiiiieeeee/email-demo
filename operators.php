@@ -139,8 +139,8 @@ class System_operators {
             $mail->isSMTP();
             $mail->Host       = 'sandbox.smtp.mailtrap.io';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'c4cf811d18af69';
-            $mail->Password   = '348efdb8320faf';
+            $mail->Username   = '';
+            $mail->Password   = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
@@ -236,11 +236,11 @@ class System_operators {
             $mail->Host       = 'live.smtp.mailtrap.io';
             $mail->SMTPAuth   = true;
             $mail->Username   = 'api';                 
-            $mail->Password   = '2edf43a1f45796826ec0af4add96348a';
+            $mail->Password   = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
-            $mail->setFrom('no-reply@jmca.com', 'Newsletter Demo');
+            $mail->setFrom('no-reply@', 'Newsletter Demo');
             $mail->addAddress($email);
             $mail->isHTML(true);
             $mail->CharSet = 'UTF-8';
